@@ -1,8 +1,8 @@
 app:
   name: futakai-fe
   image:
-    name: docker.io/sujan7410/futakai-fe
-    tag: test5
+    name: docker.io/sujan7410/site1_client
+    tag: v1.0.0
 namespace:
   name: futakai-fe
 

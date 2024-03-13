@@ -1,0 +1,23 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: {{ .Values.app.name}}-virtual-service
+  namespace: {{ .Values.namespace.name}}
+spec:
+  hosts:
+  - "futakai.com"
+  gateways:
+  - istio-system/istio-ingress-gateway
+  http:
+  - match:
+    - uri:
+        prefix: /frontend
+
+
+    route:
+    - destination:
+        host: futakai-fe-service.futakai-fe.svc.cluster.local
+        port:
+          number: 9080
+
+

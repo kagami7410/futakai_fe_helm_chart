@@ -2,7 +2,7 @@ app:
   name: futakai-fe
   image:
     name: docker.io/sujan7410/futakai-fe
-    tag: test3
+    tag: test4
 namespace:
   name: futakai-fe
 

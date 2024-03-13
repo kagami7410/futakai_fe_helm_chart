@@ -18,6 +18,6 @@ spec:
     - destination:
         host: futakai-fe-service.futakai-fe.svc.cluster.local
         port:
-          number: 9080
+          number:  {{ .Values.ports.port}}
 
 

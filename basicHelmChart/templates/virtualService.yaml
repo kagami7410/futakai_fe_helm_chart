@@ -9,6 +9,7 @@ spec:
   gateways:
   - istio-system/istio-ingress-gateway
   http:
+    protocol: HTTP1
   - match:
     - uri:
         prefix: /

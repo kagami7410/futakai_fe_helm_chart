@@ -18,7 +18,7 @@ spec:
         host: futakai-fe-service.futakai-fe.svc.cluster.local
         port:
           number:  {{ .Values.ports.port}}
-     protocol: HTTP1
+    protocol: HTTP1
 
 
 

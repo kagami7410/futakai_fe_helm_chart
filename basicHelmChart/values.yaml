@@ -1,8 +1,8 @@
 app:
   name: futakai-fe
   image:
-    name: docker.io/sujan7410/react-test
-    tag: test1
+    name: docker.io/sujan7410/futakai_fe
+    tag: test10
 namespace:
   name: futakai-fe
 

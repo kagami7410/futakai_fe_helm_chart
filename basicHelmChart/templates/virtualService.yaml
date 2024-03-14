@@ -9,10 +9,6 @@ spec:
   gateways:
   - istio-system/istio-ingress-gateway
   http:
-  - match:
-    - uri:
-        prefix: /
-
     route:
     - destination:
         host: futakai-fe-service.futakai-fe.svc.cluster.local

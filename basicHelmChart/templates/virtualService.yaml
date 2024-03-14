@@ -9,7 +9,6 @@ spec:
   gateways:
   - istio-system/istio-ingress-gateway
   http:
-    protocol: HTTP1
   - match:
     - uri:
         prefix: /
@@ -19,5 +18,7 @@ spec:
         host: futakai-fe-service.futakai-fe.svc.cluster.local
         port:
           number:  {{ .Values.ports.port}}
+     protocol: HTTP1
+
 
 
